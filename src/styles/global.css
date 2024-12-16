@@ -150,6 +150,14 @@ nav ul li a:hover{
   font-weight: bold;
 }
 
+/* Post Detail */
+.postDetail h2{
+  margin-bottom: .5rem;
+}
+.postDetail > p{
+  margin-top: .5rem;
+}
+
 /* CommentSection */
 .commentWrap{
   margin-top: 30px;
@@ -175,19 +183,16 @@ nav ul li a:hover{
 .commentAddBtn:hover{
   background-color: #caa19f;
 }
-.commentList input[type=text]{
-  border: none;
-}
-.commentList input[type=text]:focus{
-  border: none;
-}
 .commentList li{
-  background-color: #e7e7e7;
+  background-color: #f8f8f8;
   margin: 5px 15px;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
+}
+.commentsBtn{
+  margin-top: .5rem;
 }
 .editBtn, .deleteBtn{
   color:#60679d;
@@ -215,3 +220,4 @@ nav ul li a:hover{
 .reple button{
   flex: 1;
 }
+
