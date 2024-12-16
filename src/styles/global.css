@@ -1,0 +1,217 @@
+/* font */
+@font-face {
+  font-family: 'Ownglyph_ParkDaHyun';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  background-color: #f5f5f5; /* 전반적인 배경 색상 */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+html, body, button{
+  font-family: 'Ownglyph_ParkDaHyun';
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar */
+nav{
+  background-color:#60679d;
+  color:#ebebeb;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo{
+  margin-left: 50px; 
+  font-size: 25px; 
+  cursor: pointer;
+}
+nav ul{
+  display: flex; 
+  margin-right: 50px; 
+  gap: 15px;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+}
+
+/* content */
+.content{
+  max-width: 1000px;
+  margin: 0 auto; overflow-y: auto;
+  height: calc(100vh - 130px);
+}
+
+/* content - home */
+.jouralLayout{
+  background-color: #fffbf8;
+  border: 2px solid #fbd9d7;
+  margin: 20px 10px;
+  padding: 2rem;
+  color: #353f4b;
+  border-radius: 10px;
+}
+.home, .profile{
+  text-align: center;
+}
+.home p{
+  margin-bottom: 20px;
+}
+.intro p{
+  margin-bottom: 20px;
+}
+.home .cta{
+  margin-top: 20px;
+}
+.cta button{
+  background-color: #a197ac;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  transition: .3s;
+}
+.cta button:hover{
+  background-color: #d4c5dc;
+  color: #60679d;
+}
+
+/* posts */
+.posts{
+  text-align: left;
+}
+.posts ul li{
+  background-color: #fcf7f4;
+}
+.postsCard{
+  border: 1px solid #fbd9d7;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.postsCard p{
+  margin-bottom: 10px;
+  color: #666
+}
+.likeBtn{
+  font-size: 20px; padding: 0 10px 0 0;
+  font-weight: bold;
+}
+.likeBtn.liked{
+  color:crimson
+}
+
+/* profile */
+.profilePic img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer{
+  height: 50px; background-color: #666; text-align: center; line-height: 50px; color: #dadada
+}
+.nav-link {
+  color: black;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.nav-link.active {
+  color: #60679d;
+  font-weight: bold;
+}
+
+/* CommentSection */
+.commentWrap{
+  margin-top: 30px;
+}
+.commentToggleBtn{
+  background-color: #60679d;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .3s;
+  margin-bottom: 1rem;
+}
+.commentToggleBtn:hover{
+  background-color: #4d5279;
+}
+.commentAddBtn{
+  background-color: #fbd9d7;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: .3s;
+}
+.commentAddBtn:hover{
+  background-color: #caa19f;
+}
+.commentList input[type=text]{
+  border: none;
+}
+.commentList input[type=text]:focus{
+  border: none;
+}
+.commentList li{
+  background-color: #e7e7e7;
+  margin: 5px 15px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+.editBtn, .deleteBtn{
+  color:#60679d;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 1px solid #60679d;
+}
+.deleteBtn{
+  color: #812f33;
+  border-color: #812f33;
+  margin-left: 10px; 
+}
+.reple{
+  width: 93%;
+  margin: auto;
+  display: flex;
+}
+.reple input{
+  flex: 3;
+  margin-right: 10px;
+}
+.reple button{
+  flex: 1;
+}

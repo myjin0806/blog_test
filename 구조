@@ -1,0 +1,18 @@
+src/
+├── components/
+│   ├── Navbar.js          // 상단 내비게이션 컴포넌트
+│   ├── Footer.js          // 하단 푸터 컴포넌트
+│   ├── Card.js            // 게시글 카드 컴포넌트 (게시글 리스트에 사용)
+│   ├── CommentSection.js  // 댓글 작성 및 목록 컴포넌트
+├── pages/
+│   ├── Home.js            // 홈 페이지 컴포넌트
+│   ├── Posts.js           // 게시글 리스트 페이지
+│   ├── PostDetail.js      // 개별 게시글 상세 페이지
+│   ├── Profile.js         // 작성자 프로필 페이지
+│   └── NotFound.js        // 404 에러 페이지
+├── data/
+│   └── postsData.js           // 게시글 데이터를 관리하는 파일
+├── styles/
+│   └── global.css         // 전체 애플리케이션에 적용되는 스타일 정의
+├── App.js                 // 라우터 및 전체 앱 구성 파일
+└── index.js               // React 애플리케이션 진입점
